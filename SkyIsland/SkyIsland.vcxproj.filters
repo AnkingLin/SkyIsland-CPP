@@ -1,36 +1,117 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="资源文件">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{e7bf0ae0-37dc-4588-9621-4867cf74dbb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{97dd6bc3-f2b4-4e62-bb99-509540a8b3a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Renderer">
+      <UniqueIdentifier>{f082c0e2-51cf-43bd-b788-4ed007d2feb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\math">
+      <UniqueIdentifier>{b3495fd1-3b2a-44ef-bb94-0e318ce86c6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Sky">
+      <UniqueIdentifier>{c9ee1ab6-6fa4-4eaf-ac49-2fff44aa9432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Sky\Clod">
+      <UniqueIdentifier>{6319cedf-f19e-418b-a549-bd218d631083}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Texture">
+      <UniqueIdentifier>{56a5167e-d9cc-4e99-bc4d-c49067447c2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Renderer">
+      <UniqueIdentifier>{48b0820d-0aca-4c35-a546-c3eec4203ee1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Sky\Island">
+      <UniqueIdentifier>{83bf259c-2553-4a5f-bff7-38a7d168b19c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
+    <ClCompile Include="Main.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="stdinc.cpp" />
+    <ClCompile Include="Vec3.cpp">
+      <Filter>Engine\math</Filter>
+    </ClCompile>
+    <ClCompile Include="GLView.cpp">
+      <Filter>Engine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="VBO.cpp">
+      <Filter>Engine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="SoilClod.cpp">
+      <Filter>Game\Sky\Clod</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyIslandGame.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Clod.cpp">
+      <Filter>Game\Sky\Clod</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures.cpp">
+      <Filter>Game\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="ClodRenderer.cpp">
+      <Filter>Game\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Clods.cpp">
+      <Filter>Game\Sky\Clod</Filter>
+    </ClCompile>
+    <ClCompile Include="Island.cpp">
+      <Filter>Game\Sky\Island</Filter>
+    </ClCompile>
+    <ClCompile Include="Sky.cpp">
+      <Filter>Game\Sky</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="SkyIsland.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
+    <ClInclude Include="stdinc.h" />
+    <ClInclude Include="SIE.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec3.h">
+      <Filter>Engine\math</Filter>
+    </ClInclude>
+    <ClInclude Include="GLView.h">
+      <Filter>Engine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="VBO.h">
+      <Filter>Engine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="SoilClod.h">
+      <Filter>Game\Sky\Clod</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyIslandGame.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Clod.h">
+      <Filter>Game\Sky\Clod</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures.h">
+      <Filter>Game\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="ClodRenderer.h">
+      <Filter>Game\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Clods.h">
+      <Filter>Game\Sky\Clod</Filter>
+    </ClInclude>
+    <ClInclude Include="Island.h">
+      <Filter>Game\Sky\Island</Filter>
+    </ClInclude>
+    <ClInclude Include="Sky.h">
+      <Filter>Game\Sky</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
